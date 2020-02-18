@@ -1,0 +1,693 @@
+/* light teal 5dc0a6 */
+/* dark green 267346 */
+/* dark blue 4169E1 */
+/* light blue rgb(3, 95, 240) */
+/* dark grey 738598 */
+/* blue grey 8B8897 */ 
+
+/* html disable start */
+body {
+  margin: 0;
+  background-color: #1B1834;
+  color: white;
+  font-family: sans-serif;
+}
+
+button {
+  border: none;
+  color: white;
+  background-color: transparent;
+  font-size: unset;
+  padding: 5px;
+  outline: none;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+  cursor: default;
+}
+
+input[type="submit"] {
+  outline: none;
+  border: none;
+}
+
+input[type="submit"]:focus {
+  background-color: rgb(38, 115, 70);
+  color: white;
+}
+/* html disable end */
+
+
+/* common classes start */
+.centered-row {
+  text-align: center;
+}
+
+.left-aligned {
+  text-align: left;
+}
+
+.inline-block {
+  display: inline-block;
+}
+/* common classes end */
+
+
+/* animated input and label start */
+label, .animated-input {
+  transition: all 0.2s;
+  touch-action: manipulation;
+  text-align: left;
+  color: black;
+}
+
+.animated-input-box {
+  display: flex;
+  flex-flow: column-reverse;
+  width: 90%;
+  margin-bottom: 6px;
+}
+
+.animated-input {
+  font-size: 1em;
+  border-radius: 3px;
+  border: 3px solid white;
+  padding: 0px 0px 0px 4px;
+  cursor: text;
+}
+
+.animated-input:focus {
+  outline: none;
+  border: 3px solid #267346;
+}
+
+label {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding-left: 5px;
+}
+
+.animated-input:placeholder-shown + label {
+  cursor: text;
+  max-width: 66.66%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transform-origin: left bottom;
+  transform: translate(0, 1.6rem) scale(1.15);
+}
+
+.animated-input::-webkit-input-placeholder {
+  opacity: 0;
+  transition: inherit;
+}
+
+.animated-input:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.animated-input:not(:placeholder-shown) + label,
+.animated-input:focus + label {
+  transform: translate(0, 0) scale(1);
+  cursor: pointer;
+  color: white;
+}
+/* animated input and label end */
+
+
+/* Menubar begin */
+.menu-bar {
+  background-color: #1b1919;
+  display: flow-root;
+}
+
+.menu-bar-icons-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-bar-icons-list > li > a {
+  float: right;
+  padding: 13px;
+  color: #8B8897;
+}
+
+.menu-bar-icons-list > li > svg {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+
+.menu-bar-icons-list > li a:hover {
+  background-color: #267346;
+  color: white;
+}
+/* Menubar end */
+
+
+/* anime table start */
+.anime-table {
+  margin: 60px;
+  background-color: white;
+  color: black;
+}
+
+.table-title {
+  display: inline-block;
+  color: white;
+  padding: 7px;
+  border-radius: 3px;
+  font-size: 20px;
+}
+
+.delete-button {
+  color: rgba(255, 7, 0, 0.7);
+}
+
+.delete-button:hover {
+  color: rgba(255, 7, 0, 1);
+}
+
+.reset-button {
+  margin-left: 10px;
+  color: white;
+  background-color: #5dc0a6;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.reset-button:hover {
+  background-color: #f94943;
+}
+/* anime table end */
+
+
+/* Loading Bar begin */
+.loading-bar {
+  display: block;
+  margin: auto;
+  padding-top: 100px;
+}
+
+.loading-icon {
+  display: block;
+  margin: auto;
+}
+/* Loading Bar end */
+
+/* anime info start */
+.anime-info {
+  width: 800px;
+  display: table;
+  margin: 0 auto;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.anime-info > .anime-img {
+  width: 30%;
+  display: table-cell;
+  background-size: 100% 100%;
+  border-top-right-radius: 5px;
+}
+
+.anime-info > .details {
+  display: table-cell;
+  background-color: #1D1D2B;
+  color: #e3e3e3;
+  border-top-left-radius: 5px;
+  text-align: left;
+}
+
+.anime-info > .details > p {
+  padding-left: 20px;
+  display: inline-block;
+}
+
+.anime-title {
+  margin-top: 5px;
+  line-height: 30px;
+  font-size: 24px;
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+
+.detail-item {
+  color: #5f5f80;
+  display: inline-block;
+  margin-right: 5px;
+  padding: 2px;
+}
+
+.anime-icon {
+  margin-right: 10px;
+  color: #a6aad1;
+}
+
+.anime-button {
+  color: rgb(38, 115, 70);
+  padding: 5px;
+  border: 2px solid rgb(38, 115, 70);
+  border-radius: 3px;
+}
+
+.anime-button:hover {
+  color: white;
+  background-color: rgb(38, 115, 70);
+  border: 2px solid rgb(38, 115, 70);
+}
+
+.anime-available-tag {
+  margin-left: -30px;
+  margin-bottom: 10px;
+  color: white;
+  width: 100px;
+  background-color: #F58;
+  border-radius: 5px;
+  padding: 3px 5px;
+  text-align: center
+}
+
+.star-meter-container {
+  display: inline-block;
+  margin: 0 auto;
+  border-spacing: 10px;
+  vertical-align: super;
+}
+
+.star-meter {
+  display: inline-block;
+  border-radius: 3px;
+}
+
+.star-meter > i {
+  display: inline-block;
+  padding: 1px;
+}
+
+.fa-star {
+  font-size: 13px;
+}
+
+.star-colored {
+  color: #FDFF58;
+}
+
+.icon-list {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.icon-list > img {
+  height: 6%;
+  width: 6%;
+  margin-right: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.icon-list > img:last-child {
+  margin-right: 0px;
+}
+
+.icon-list > img:hover {
+  transform: scale(1.25);
+}
+
+.review {
+  width: 800px;
+  margin-top: 10px;
+  text-align: center;
+  display: inline-block;
+}
+
+.review-count {
+  border-bottom: 3px solid #267346;
+  color: white;
+  padding: 5px;
+  text-align: left;
+}
+
+.comment-input {
+  display: block;
+  width: 98%;
+  height: 30px;
+}
+
+.comment-button {
+  background-color: silver;
+  font-size: 15px;
+  padding: 5px 10px 5px 10px;
+  color: white;
+  border-radius: 3px;
+  margin: 20px 0px;
+}
+
+.comment-button:hover {
+  background-color: #267346;
+}
+/* anime info end */
+
+
+/* add anime begin */
+.add-form-card {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #23222B;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.add-form-title {
+  text-align: left;
+  background-color: #738598;
+  padding: 10px 10px 10px 20px;
+  font-size: 20px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.add-form {
+  padding: 5px 20px 10px 20px;
+}
+
+.add-form-element {
+  min-width: 500px;
+  width: 500px;
+}
+
+.add-form-submit {
+  background-color: silver;
+  font-size: 1em;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 7px;
+  border-radius: 3px;
+}
+
+.add-form-submit:hover {
+  background-color: #267346;
+}
+
+.genre-button,
+.genre-button-selected {
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  background-color: #5dc0a6;
+  padding: 5px;
+  border-radius: 2px;
+}
+
+.genre-button-selected {
+  background-color: #267346;
+}
+
+.genre-button:hover {
+  background-color: #267346;
+}
+/* add anime end */
+
+/* user filter start */
+.alphabet-filter-button {
+  padding: 8px;
+  border-radius: 3px;
+  margin: 5px;
+  width: 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+.alphabet-filter-button:hover {
+  transform: scale(1.25);
+  
+}
+
+.inactive-toggle {
+  opacity: 0.3;
+}
+
+.all-button {
+  width: 50px;
+  opacity: 1; /* even if clicked, do not dim the button */
+}
+/* user filter end */
+
+
+/* user list card start */
+.user-list-card {
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  margin: 15px;
+  width: 180px;
+  background-color: #fffaff;
+  text-align: center;
+}
+
+.user-list-card:hover {
+  transform: scale(1.05);
+}
+
+.user-list-card-img {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  box-shadow: inset 2000px 0 0 0 rgba(0, 0, 0, 0.3);
+  min-height: 150px;
+
+}
+
+.user-list-avatar-img {
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+}
+
+.user-list-card-info {
+  min-height: 60px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.user-list-card-info > p {
+  font-size: 20px;
+  color: #585858;
+  margin: 0px;
+  margin-bottom: 2px;
+}
+
+.user-list-card-info > span {
+  font-size: 14px;
+  color: #585858;
+}
+/* user list card end */
+
+
+/* user info start */
+.user-info-container {
+  padding: 20px;
+  background-color: #38364C;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 50%;
+}
+
+.user-info-header > span {
+  font-size: 30px;
+}
+
+.user-info-details > div {
+  font-size: 20px;
+  color: #82818A;
+}
+
+.user-info-details > p {
+  border-bottom: 2px solid white;
+}
+
+.user-detail-input {
+  width: 40%;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  -webkit-appearance: none;
+  border: 2px solid #1B1834;
+}
+
+.user-detail-input:focus {
+  outline: none;
+}
+
+.user-button {
+  color: white;
+  background-color: transparent;
+  padding: 5px 15px 5px 15px;
+  border-radius: 3px;
+  border: 1px solid white;
+  margin-left: 20px;
+  vertical-align: text-bottom;
+}
+
+.user-button:hover {
+  color: #1B1834;
+  background-color: white;
+}
+
+.save-button {
+  border: 1px solid white;
+}
+
+.save-button:hover {
+  color: white;
+  background-color: #267346;
+  border: 1px solid #267346;
+}
+
+.back-button {
+  text-align: left;
+  padding-top: 10px;
+  padding-left: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+.back-button:hover {
+  transform: scale(1.01);
+}
+/* user info end */
+
+
+/* sprite list start */
+.sprite-container {
+  padding: 5px 20px 20px 20px;
+  background-color: #1D1D2B;
+  border: 1px solid white;
+  display: inline-block;
+  width: 250px;
+  height: 310px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease-in-out;
+  vertical-align: bottom;
+}
+
+.sprite-container:hover {
+  transform: scale(1.04);
+}
+
+.sprite-title {
+  background-color: #1D1D2B;
+  border-radius: 1px;
+  padding-top: 5px;
+  color: white;
+}
+/* sprite list end */
+
+
+/* login form start */
+.login-box {
+  display: inline-block;
+}
+
+.login-tab {
+  top: 3px;
+  width: 50%;
+  height: 35px;
+  background: white;
+  position: relative;
+  float: left;
+  z-index: 1;
+  border-radius: 6px 6px 0 0;
+  transform: perspective(5px) rotateX(0.93deg) translateZ(-1px);
+  transform-origin: 0 0;
+  backface-visibility: hidden;
+}
+
+.login-title {
+  font-size: 16px;
+  position: absolute;
+  padding: 13px;
+  z-index: 2;
+  color: black;
+}
+
+.login-form {
+  background-color: white;
+  color: black;
+  display: inline-block;
+  text-align: left;
+  border-radius: 0px 3px 3px;
+  width: 270px;
+  padding-top: 30px;
+}
+
+.login-label {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 2px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.login-input {
+  width: 94%;
+  background-color: #F5F5F5;
+  border: 1px solid #F5F5F5;
+  outline: none;
+}
+
+.login-input:first-of-type {
+  margin-bottom: 10px;
+}
+
+.login-input:focus {
+  background-color: #F8F8C6;
+  border: 1px solid #F8F8C6;
+}
+
+.login-button {
+  font-size: 20px;
+  width: 100%;
+  background-color: #5dc0a6;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  transition: all 0.7s ease;
+  padding: 12px;
+}
+
+.login-button:hover {
+  background-color: #267346;
+}
+/* login form end */
+
+
+/* loading button start */
+.loading-button {
+  display: inline-block;
+  border: 2px solid white;
+  width: 200px;
+}
+
+.loading-button:hover {
+  background-color: white;
+}
+
+.loading-button:hover > button {
+  color: #1B1834;
+}
+/* loading button end */
+
+
+/* semantic ui changes start */
+.ui.dropdown .menu {
+  left: unset;
+  right: 0px;
+  top: 30px;
+  min-width: 250px;
+}
+/* semantic ui changes end */
